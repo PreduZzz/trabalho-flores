@@ -1,0 +1,196 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blue Horizon Travel</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="brand">
+            <span class="brand-name">Blue Horizon</span>
+            <span class="brand-note">Experiências de viagem premium</span>
+        </div>
+        <nav class="nav-links">
+            <a href="#destinations">Destinos</a>
+            <a href="#experiences">Destaques</a>
+            <a href="#about">Sobre</a>
+            <a href="#contact">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-copy">
+                <p class="eyebrow">Nova temporada de viagens</p>
+                <h1>Os melhores destinos do sul do Brasil para sua próxima aventura.</h1>
+                <p class="hero-text">Roteiros exclusivos, serviços personalizados e destinos que refletem luxo, conforto e autenticidade.</p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#destinations">Explorar destinos</a>
+                    <a class="btn btn-secondary" href="#contact">Converse com um especialista</a>
+                </div>
+            </div>
+         
+                <div class="hero-gallery">
+                    <div class="hero-image image-one"></div>
+                    <div class="hero-image image-two"></div>
+                    <div class="hero-image image-three"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="destinations" class="section destinations-section fade-in-section">
+            <div class="section-header">
+                <p>Galeria de destinos</p>
+                <h2>Imagens que despertam vontade de viajar.</h2>
+            </div>
+            <div class="destination-grid">
+                <article class="destination-card" data-destination="bombinhas">
+                    <div class="destination-image dest-one"></div>
+                    <div class="destination-copy">
+                        <h3>Bombinhas</h3>
+                        <p>Ambientes contemplativos para viagens memoráveis.</p>
+                    </div>
+                </article>
+                <article class="destination-card" data-destination="porto_alegre">
+                    <div class="destination-image dest-two"></div>
+                    <div class="destination-copy">
+                        <h3>Porto Alegre</h3>
+                        <p>Experiências urbanas com charme e autenticidade.</p>
+                    </div>
+                </article>
+                <article class="destination-card" data-destination="gramado">
+                    <div class="destination-image dest-three"></div>
+                    <div class="destination-copy">
+                        <h3>Gramado</h3>
+                        <p>Roteiros de luxo na natureza, com serviço VIP e tranquilidade.</p>
+                    </div>
+                </article>
+                <article class="destination-card" data-destination="balneario_camboriu">
+                    <div class="destination-image dest-four"></div>
+                    <div class="destination-copy">
+                        <h3>Balneario Camboriu</h3>
+                        <p>Ambientes que equilibram design, conforto e exclusividade.</p>
+                    </div>
+                </article>
+                <article class="destination-card" data-destination="paranagua">
+                    <div class="destination-image dest-five"></div>
+                    <div class="destination-copy">
+                        <h3>Paranagua</h3>
+                        <p>Experiências imersivas com gastronomia, arte e paisagens únicas.</p>
+                    </div>
+                </article>
+                <article class="destination-card" data-destination="curitiba">
+                    <div class="destination-image dest-six"></div>
+                    <div class="destination-copy">
+                        <h3>Curitiba</h3>
+                        <p>Detalhes que tornam cada momento especial e memorável.</p>
+                    </div>
+                </article>
+                <article class="destination-card" data-destination="florianopolis">
+                    <div class="destination-image dest-seven"></div>
+                    <div class="destination-copy">
+                        <h3>Florianópolis</h3>
+                        <p>Ilhas paradisíacas com praias deslumbrantes e cultura local vibrante.</p>
+                    </div>
+                </article>
+                <article class="destination-card" data-destination="foz_do_iguacu">
+                    <div class="destination-image dest-eight"></div>
+                    <div class="destination-copy">
+                        <h3>Foz do Iguaçu</h3>
+                        <p>As cataratas mais impressionantes do mundo, uma maravilha natural.</p>
+                    </div>
+                </article>
+                <article class="destination-card" data-destination="bento_goncalves">
+                    <div class="destination-image dest-nine"></div>
+                    <div class="destination-copy">
+                        <h3>Bento Gonçalves</h3>
+                        <p>Capital do vinho brasileiro, com vinícolas e paisagens serranas.</p>
+                    </div>
+                </article>
+            </div>
+            <div id="restaurantDetails" class="restaurant-details"></div>
+        </section>
+
+        <section id="experiences" class="section experience-section fade-in-section">
+            <div class="section-header">
+                <p>Destaques selecionados</p>
+                <h2>Explore estilos de viagem que combinam com você.</h2>
+            </div>
+            <div class="experience-grid">
+                <div class="experience-card experience-beach" data-experience="beach">
+                    <h3>Retiro à beira-mar</h3>
+                    <p>Praias privativas e hospedagens com vista panorâmica para o oceano.</p>
+                </div>
+                <div class="experience-card experience-urban" data-experience="urban">
+                    <h3>Vibração urbana</h3>
+                    <p>Destinos que misturam cultura contemporânea, gastronomia refinada e design local.</p>
+                </div>
+                <div class="experience-card" data-experience="nature">
+                    <h3>Refúgio natural</h3>
+                    <p>Conteúdo autêntico para quem busca relaxamento e reconexão em cenários inspiradores.</p>
+                </div>
+            </div>
+            <div id="experienceDetails" class="experience-details"></div>
+        </section>
+
+        <section id="about" class="section about-section fade-in-section">
+            <div class="section-header">
+                <p>Uma nova linguagem de viagens</p>
+                <h2>Viva roteiros sofisticados com identidade própria.</h2>
+            </div>
+            <div class="about-grid">
+                <article class="feature-card">
+                    <h3>Curadoria de alto nível</h3>
+                    <p>Selecionamos os melhores hotéis, passeios e experiências para você aproveitar com tranquilidade.</p>
+                </article>
+                <article class="feature-card">
+                    <h3>Atendimento personalizado</h3>
+                    <p>Um concierge dedicado faz cada etapa da viagem fluir com exclusividade e conforto.</p>
+                </article>
+                <article class="feature-card">
+                    <h3>Memórias cuidadosamente planejadas</h3>
+                    <p>Momentos inesquecíveis criados para surpreender a cada novo destino.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact-section fade-in-section">
+            <div class="section-header">
+                <p>Vamos planejar juntos</p>
+                <h2>Conte-nos seu estilo de viagem ideal.</h2>
+            </div>
+            <div class="contact-layout">
+                <div class="contact-copy">
+                    <h3>O primeiro passo para uma viagem diferenciada</h3>
+                    <p>Preencha o formulário e nossa equipe entrará em contato com opções personalizadas para você.</p>
+                </div>
+                <form id="contactForm" class="contact-form">
+                    <label class="form-field">
+                        <span>Nome completo</span>
+                        <input type="text" name="name" placeholder="Seu nome" required />
+                    </label>
+                    <label class="form-field">
+                        <span>Email</span>
+                        <input type="email" name="email" placeholder="seu@email.com" required />
+                    </label>
+                    <label class="form-field">
+                        <span>Mensagem</span>
+                        <textarea name="message" rows="4" placeholder="Conte-nos o tipo de viagem que deseja"></textarea>
+                    </label>
+                    <button type="submit" class="btn btn-primary">Enviar solicitação</button>
+                    <p class="form-response" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Blue Horizon Travel • Design de viagens premium</p>
+        <span id="year"></span>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
