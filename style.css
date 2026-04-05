@@ -1,4 +1,5 @@
-﻿:root {
+﻿/* Variáveis globais de cor e transição usadas em todo o site */
+:root {
     --bg-dark: #040b1a;
     --nav-dark: rgba(8, 20, 43, 0.92);
     --card-surface: rgba(255, 255, 255, 0.08);
@@ -11,6 +12,7 @@
     --transition: 0.45s ease;
 }
 
+/* Reset básico para bordas e caixas */
 * {
     box-sizing: border-box;
 }
@@ -19,6 +21,7 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Estilo base do corpo da página, incluindo o fundo e as cores padrão */
 body {
     margin: 0;
     font-family: 'Segoe UI', 'Roboto', sans-serif;
@@ -38,6 +41,7 @@ body::before {
     z-index: -1;
 }
 
+/* Aplica fonte herdada a botões e campos de formulário */
 button, input, textarea {
     font: inherit;
 }
@@ -47,6 +51,7 @@ img {
     display: block;
 }
 
+/* Estilo da barra superior fixa com logo e navegação */
 .site-header {
     position: sticky;
     top: 0;
@@ -100,6 +105,7 @@ main {
     padding: 2rem;
 }
 
+/* Seção principal da página com chamada de destaque e imagens hero */
 .hero-section {
     display: grid;
     grid-template-columns: 1.3fr 1fr;
@@ -139,6 +145,7 @@ main {
     gap: 1rem;
 }
 
+/* Estilo de botões reutilizáveis para ações principais e secundárias */
 .btn {
     display: inline-flex;
     align-items: center;
@@ -203,6 +210,7 @@ main {
     color: #cbd5e1;
 }
 
+/* Galeria de imagens da seção hero */
 .hero-gallery {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -240,6 +248,7 @@ main {
     background-image: url('imagens/florianopolis.jpg');
 }
 
+/* Estilo padrão para seções de conteúdo e cabeçalhos de seção */
 .section {
     margin-top: 5rem;
 }
@@ -260,6 +269,7 @@ main {
     max-width: 14ch;
 }
 
+/* Grades de layout usadas para destinos, experiências e blocos sobre */
 .about-grid,
 .experience-grid,
 .destination-grid {
@@ -712,6 +722,7 @@ main {
     transform: translateY(0);
 }
 
+/* Ajustes responsivos para telas médias e pequenas */
 @media (max-width: 1024px) {
     .hero-section {
         grid-template-columns: 1fr;

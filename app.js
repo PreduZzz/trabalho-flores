@@ -1,8 +1,10 @@
-﻿const yearElement = document.getElementById('year');
+﻿// Atualiza o ano no rodapé automaticamente
+const yearElement = document.getElementById('year');
 if (yearElement) {
     yearElement.textContent = new Date().getFullYear();
 }
 
+// Dados de restaurantes, hotéis e informações de viagem organizados por destino
 const restaurantData = {
     bombinhas: {
         title: 'Bombinhas',
@@ -411,6 +413,7 @@ const restaurantData = {
     }
 };
 
+// Dados de pontos turísticos principais para cada destino
 const pointsOfInterestData = {
     bombinhas: [
         { name: 'Praia de Bombinhas', description: 'A principal praia da região, com águas claras e estrutura de quiosques.' },
@@ -452,13 +455,9 @@ const pointsOfInterestData = {
         { name: 'Parque Nacional do Iguaçu', description: 'Reserva natural com fauna e flora exuberante.' },
         { name: 'Marco das Três Fronteiras', description: 'Ponto onde se encontram Brasil, Argentina e Paraguai.' }
     ],
-    bento_goncalves: [
-        { name: 'Vale dos Vinhedos', description: 'Rota turística com vinícolas, restaurantes e paisagens serranas.' },
-        { name: 'Parque Epopeia Italiana', description: 'Museu ao ar livre com réplicas de construções italianas.' },
-        { name: 'Vinícola Miolo', description: 'Uma das maiores vinícolas do Brasil, com degustações e tours.' }
-    ]
 };
 
+// Observador que aplica animação de fade-in quando os elementos entram na tela
 const observers = document.querySelectorAll('.fade-in-section, .feature-card, .experience-card, .destination-card');
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
@@ -471,8 +470,10 @@ const observer = new IntersectionObserver((entries) => {
 
 observers.forEach((section) => observer.observe(section));
 
+// Container onde o HTML de detalhes dos destinos é inserido dinamicamente
 const restaurantDetails = document.getElementById('restaurantDetails');
 
+// Função que renderiza os detalhes de restaurantes, hotéis e pontos turísticos do destino selecionado
 const renderRestaurantDetails = (destinationKey) => {
     const destination = restaurantData[destinationKey];
     if (!destination || !restaurantDetails) {
@@ -537,6 +538,7 @@ const renderRestaurantDetails = (destinationKey) => {
     }
 };
 
+// Registra clique nos cartões de destino para abrir a seção detalhada correspondente
 const destinationCards = document.querySelectorAll('.destination-card');
 destinationCards.forEach((card) => {
     card.addEventListener('click', () => {
@@ -548,6 +550,7 @@ destinationCards.forEach((card) => {
     });
 });
 
+// Agrupamento de destinos por tipos de experiência de viagem
 const experienceCategories = {
     beach: ['bombinhas', 'balneario_camboriu', 'florianopolis'],
     urban: ['porto_alegre', 'curitiba', 'gramado'],
@@ -556,18 +559,20 @@ const experienceCategories = {
 
 const experienceDetails = document.getElementById('experienceDetails');
 
+// Imagens de fundo usadas na visualização de destinos por experiência
 const destinationBackgroundImages = {
     bombinhas: 'imagens/bombinhas.jpg',
-    balneario_camboriu: 'imagens/balneario_camboriu.jpg',
-    florianopolis: 'imagens/florianopolis.jpg',
+    balneario_camboriu: 'imagens/balneario.jpg',
+    florianopolis: 'imagens/floripa.jpg',
     porto_alegre: 'imagens/porto_alegre.jpg',
     curitiba: 'imagens/curitiba.jpg',
-    gramado: 'imagens/gramado.jpg',
+    gramado: 'imagens/gramados.jpg',
     bento_goncalves: 'imagens/bento_goncalves.jpg',
     paranagua: 'imagens/paranagua.jpg',
-    foz_do_iguacu: 'imagens/foz_do_iguacu.jpg'
+    foz_do_iguacu: 'imagens/foz-do-iguacu.jpg'
 };
 
+// Renderiza o painel de detalhes da categoria de experiência selecionada
 const renderExperienceDetails = (experienceKey) => {
     const destinations = experienceCategories[experienceKey];
     if (!destinations || !experienceDetails) {
@@ -625,6 +630,7 @@ const renderExperienceDetails = (experienceKey) => {
 };
 
 let currentExperienceKey = null;
+// Adiciona comportamento de clique nas cartas de experiência para alternar a visualização
 const experienceCards = document.querySelectorAll('.experience-card');
 experienceCards.forEach((card) => {
     card.addEventListener('click', () => {
@@ -644,6 +650,7 @@ experienceCards.forEach((card) => {
     });
 });
 
+// Validação simples e mensagem de envio do formulário de contato
 const contactForm = document.getElementById('contactForm');
 if (contactForm) {
     contactForm.addEventListener('submit', (event) => {
