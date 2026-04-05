@@ -1,4 +1,4 @@
-﻿# Blue Horizon Travel
+﻿# Sul Inesquecível
 
 Uma página web moderna e interativa para uma agência de viagens premium especializada no sul do Brasil. O site apresenta destinos turísticos com informações detalhadas sobre pontos turísticos, restaurantes e hotéis, além de uma seção de experiências personalizadas.
 
